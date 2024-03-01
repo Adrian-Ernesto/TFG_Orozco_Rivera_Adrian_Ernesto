@@ -3,7 +3,7 @@
 <package format="3">
   <name>arduinobot_msgs</name>
   <version>0.0.0</version>
-  <description>TODO: Python Functions package</description>
+  <description>TODO: Message Functions package</description>
   <maintainer email="orezto99@estudiantec.cr">adrian</maintainer>
   <license>TODO: License declaration</license>
 
