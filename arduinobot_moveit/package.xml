@@ -3,8 +3,8 @@
 <package format="3">
   <name>arduinobot_moveit</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="adrian@todo.todo">adrian</maintainer>
+  <description>TODO: Trajectory planning package</description>
+  <maintainer email="orezto99@estudiantec.cr">adrian</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
