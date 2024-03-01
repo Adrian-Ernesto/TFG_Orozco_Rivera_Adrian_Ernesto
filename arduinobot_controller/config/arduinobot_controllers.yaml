@@ -1,0 +1,45 @@
+controller_manager:
+  #DECLARE THE PARAMETERS FOR THE CONTROLLER TYPES AND UPDATE RATE
+  ros__parameters:
+    #THE CONTROLLER STATUS IS UPDATED 10 TIMES EVERY SECOND  
+    update_rate: 10
+    #THE ARM CONTROLLER IS FOR JOINT TRAJECTORY
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    #THE GRIPPER IS SET FOR JOINT TRAJECTORY ALSO TO TRACK ITS POSITION
+    gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    #A BROADCASTER IS USED TO TRANSMIT THE STATUS OF THE CONTROLLER TO THE ARCHITECTURE
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+
+    open_loop_control: true
+    allow_integration_in_goal_trajectories: true
+
+gripper_controller:
+  ros__parameters:
+    joints:
+      - joint_4
+
+    #interface_name: position
+    
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    open_loop_control: true
+    allow_integration_in_goal_trajectories: true
