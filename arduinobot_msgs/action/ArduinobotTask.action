@@ -1,0 +1,8 @@
+#GOAL MESSAGE
+int32 task_number
+---
+#RESULT MESSAGE
+bool success
+---
+#FEEDBACK MESSAGE
+int32 percentage

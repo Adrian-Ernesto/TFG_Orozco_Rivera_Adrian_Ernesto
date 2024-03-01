@@ -1,0 +1,13 @@
+#REQUEST FOR THE SERVER
+#INPUTS THE QUATERNION COMPONENTS
+float64 x
+float64 y
+float64 z
+float64 w
+---
+
+#RESPONSE FOR THE SERVER
+#OUTPUTS THE EULER ANGLES
+float64 roll
+float64 pitch
+float64 yaw
